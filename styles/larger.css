@@ -4,6 +4,10 @@
         justify-content: center;
     }
 
+    .menu-toggle {
+        display: none;
+    }
+
     main {
         grid-template-columns: 2fr 1fr;
     }
