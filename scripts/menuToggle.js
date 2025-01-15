@@ -4,5 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     menuToggle.addEventListener('click', () => {
         nav.classList.toggle('hidden');
+        menuToggle.textContent = nav.classList.contains('hidden') ? '☰' : '✖';
     });
 });

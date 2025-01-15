@@ -59,6 +59,30 @@ header {
     cursor: pointer;
 }
 
+#darkModeToggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    cursor: pointer;
+}
+
+body.dark-mode header,
+body.dark-mode nav,
+body.dark-mode .card,
+body.dark-mode .container,
+body.dark-mode footer {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body.dark-mode nav ul li a {
+    color: #bbbbbb;
+}
+
 
 
 nav{
