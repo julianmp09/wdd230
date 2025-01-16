@@ -1,0 +1,46 @@
+/* largest.css */
+
+@media (min-width: 768px) {
+    header .main-nav ul {
+        display: flex; /* Flex for larger screens */
+        flex-direction: row;
+    }
+
+    header .main-nav ul li {
+        margin: 0 15px;
+    }
+
+    header .hamburger-menu button {
+        display: none; /* Hidden for larger screens */
+    }
+
+    .info {
+        flex-direction: row; /* Row for larger screens */
+        justify-content: space-around;
+    }
+
+    .info .events,
+    .info .weather,
+    .info .forecast {
+        width: 30%; /* Adjusted width for larger screens */
+    }
+
+    .business-cards {
+        flex-direction: row; /* Row for larger screens */
+        justify-content: space-around;
+    }
+
+    .business-cards .card {
+        width: 30%; /* Adjusted width for larger screens */
+    }
+
+    .weather, .forecast{
+        text-align: center;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
