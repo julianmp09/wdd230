@@ -19,7 +19,7 @@ h3{
     text-decoration: underline;
 }
 
-h1{
+.title-home{
     text-align: center;
 }
 
@@ -55,7 +55,7 @@ header .container {
 }
 
 header .logo img {
-    height: 50px;
+    height: 128px;
 }
 
 header .logo{
