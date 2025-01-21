@@ -16,6 +16,17 @@
         grid-template-columns: 2fr 1fr;
     }
 
+    .herolabel {
+        position: absolute;
+        top: 280px;
+        left: 400px;
+        background: radial-gradient(#fff, #b5bacf);
+        border: 1px solid rgba(0, 0, 0, .75);
+        padding: 1.5rem;
+        box-shadow: 0 0 3rem #fff;
+        opacity: 0.75;
+    }
+
     h1{
         grid-column: 1/3;
     }
@@ -26,6 +37,10 @@
         font-weight: 600;
     }
 
+    iframe{
+        width: 100%;
+    }
+    
     nav ul {
         list-style-type: none;
         padding: 0;
@@ -70,7 +85,7 @@
         padding: 10px;
         text-align: center;
         position: absolute;
-        bottom: -20rem;
+        bottom: -68rem;
     }
 
 }
