@@ -74,4 +74,12 @@
         justify-content: space-around;
     }
 
+    /* Discover page layout large */
+    .discover-layout {
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

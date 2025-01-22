@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Domsealaar Chamber of Commerce">
+    <title>Domselaar Chamber of Commerce</title>
+    <meta name="author" content="Julian D. Martinez Peñaloza">
+    <meta property="og:title" content="Domselaar Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://julianmp09.github.io/wdd230/chamber/images/Domselaar-home.webp">
+    <meta property="og:url" content="https://julianmp09.github.io/wdd230/">
+    <link rel="icon" href="images/industrial-favicon-1.webp" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/getDates.js" defer></script>
+    <script defer src="scripts/lastVisit.js"></script>
+    <script defer src="scripts/lazyLoad.js"></script>
+    <script defer src="scripts/calendar.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/industrial-favicon-1.webp" alt="Domselaar Chamber of Commerce">
+                <h1>Domselaar Chamber of Commerce</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <button></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <main class="discover-layout">
+            <aside class="sidebar">
+                <h2>Welcome Message</h2>
+                <p id="visit-message"></p>
+                <h3>Event Calendar</h3>
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <button id="prev-month">&lt;</button>
+                        <span id="current-month"></span>
+                        <button id="next-month">&gt;</button>
+                    </div>
+                    <div class="calendar-grid" id="calendar-grid">
+                        <!-- Days will be populated dynamically -->
+                    </div>
+                </div>
+            </aside>
+    
+            <section class="gallery">
+                <h2>Local Photographs of Interest</h2>
+                <div class="photo-grid">
+                    <figure>
+                        <img data-src="./images/grido.webp" alt="Grido Ice Cream Shop" class="lazy">
+                        <figcaption>Grido Ice Cream Shop</figcaption>
+                    </figure>
+                    <figure>
+                        <img data-src="./images/moda-en-casa.webp" alt="Moda en Casa Electronic Shop" class="lazy">
+                        <figcaption>Moda en Casa Electronic Shop</figcaption>
+                    </figure>
+                    <figure>
+                        <img data-src="./images/PASTA-AMERICANA.webp" alt="PASTA-AMERICANA" class="lazy">
+                        <figcaption>Pasta America Fabric</figcaption>
+                    </figure>
+                    <figure>
+                        <img data-src="./images/Parroquia-Santa-Clara-de-Asís_-Domselaar.webp" alt="Parroquia Santa Clara de Asís, Domselaar" class="lazy">
+                        <figcaption>Parroquia Santa Clara de Asís, Domselaar</figcaption>
+                    </figure>
+                    <figure>
+                        <img data-src="./images/warrior-castle.webp" alt="warrior-castle" class="lazy">
+                        <figcaption>Castillo Guerrero</figcaption>
+                    </figure>
+                    <figure>
+                        <img data-src="./images/domselaar-peace.webp" alt="domselaar" class="lazy">
+                        <figcaption>Town of Domselaar</figcaption>
+                    </figure>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>Domselaar Chamber of Commerce </p>
+            <p>Domselaar, Province of Buenos Aires</p>
+            <p>Email: info@domselaar.org</p>
+            <p>Phone: (11) 1245-6789</p>
+        </div>
+        <div class="social-links">
+            <a href="#"><img src="images/Threads__app_.webp"></a>
+            <a href="#"><img src="images/Instagram_logo_2022.svg.webp" alt="Instagram"></a>
+            <a href="#"><img src="images/Facebook_logo.webp" alt="LinkedIn"></a>
+        </div>
+        <div class="project-info">
+            <p>WDD231 Class Project</p>
+            <p>Julian D. Martinez Peñaloza</p>
+            <p>&copy; <span class="copyright-year">20xx</span> Domselaar Chamber of Commerce</p>
+            <p>Last modified: <span id="last-modification"></span></p>
+        </div>
+    </footer>
+
+</body>
+</html>
