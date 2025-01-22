@@ -1,21 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
     const visitMessage = document.getElementById('visit-message');
-    const lastVisit = localStorage.getItem('lastVisit');
+    const lastVisitKey = 'last-visit';
     const currentVisit = Date.now();
-    
-    if (lastVisit) {
-        const daysBetween = Math.floor((currentVisit - lastVisit) / (1000 * 60 * 60 * 24));
-        
+
+    // Retrieve the last visit from localStorage
+    const lastVisit = localStorage.getItem(lastVisitKey);
+
+    if (!lastVisit) {
+        // First-time visit
+        visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+    } else {
+        const msInDay = 24 * 60 * 60 * 1000;
+        const daysBetween = Math.floor((currentVisit - parseInt(lastVisit, 10)) / msInDay);
+
         if (daysBetween < 1) {
-            visitMessage.textContent = "Welcome back! Great to see you again so soon!";
+            visitMessage.textContent = "Back so soon! Awesome!";
         } else if (daysBetween === 1) {
             visitMessage.textContent = "You last visited 1 day ago.";
         } else {
             visitMessage.textContent = `You last visited ${daysBetween} days ago.`;
         }
-    } else {
-        visitMessage.textContent = "Welcome! If you have any questions, let us know.";
     }
-    
-    localStorage.setItem('lastVisit', currentVisit);
+
+    // Update the last visit in localStorage
+    localStorage.setItem(lastVisitKey, currentVisit);
 });
