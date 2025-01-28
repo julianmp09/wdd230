@@ -1,0 +1,57 @@
+:root{
+    --light-white-color: #f4f4f4;
+    --gray-color: gray;
+    --light-gray-color: #ccc;
+    --dark-blue-color: #007BFF;
+    --light-blue-color: #0056b3;
+    --white-color: white;
+
+}
+
+main {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: var(--light-white-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--light-gray-color);
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--dark-blue-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--light-blue-color);
+}
+
+small {
+    font-size: 12px;
+    color: var(--gray-color);
+}
+
+#ratingValue {
+    font-weight: bold;
+    margin-left: 10px;
+}
