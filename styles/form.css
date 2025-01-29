@@ -1,13 +1,19 @@
-:root{
+:root {
     --light-white-color: #f4f4f4;
     --gray-color: gray;
     --light-gray-color: #ccc;
     --dark-blue-color: #007BFF;
     --light-blue-color: #0056b3;
     --white-color: white;
-
+    --dark-bg-color: #121212;
+    --dark-text-color: #e0e0e0;
+    --dark-input-bg-color: #1e1e1e;
+    --dark-border-color: #444444;
+    --dark-button-bg-color: #333333;
+    --dark-button-hover-bg-color: #555555;
 }
 
+/* General Styles */
 main {
     width: 80%;
     max-width: 600px;
@@ -15,9 +21,32 @@ main {
     background-color: var(--light-white-color);
     padding: 20px;
     border-radius: 8px;
+    border: 2px solid var(--light-gray-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: black;
 }
 
+/* Dark Mode Styles */
+body.dark-mode {
+    --light-white-color: var(--dark-bg-color);
+    --gray-color: #999;
+    --light-gray-color: var(--dark-border-color);
+    --dark-blue-color: var(--dark-button-bg-color);
+    --light-blue-color: var(--dark-button-hover-bg-color);
+    --white-color: var(--dark-text-color);
+    --dark-border-highlight: #888888; /* For highlighted borders */
+}
+
+/* Updated Main Border */
+body.dark-mode main {
+    border: 2px solid var(--dark-border-highlight);
+}
+
+body.dark-mode .title {
+    color: var(--dark-border-highlight)
+}
+
+/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
@@ -27,6 +56,7 @@ form {
 label {
     font-size: 14px;
     font-weight: bold;
+    color: var(--gray-color);
 }
 
 input, button {
@@ -34,18 +64,39 @@ input, button {
     font-size: 16px;
     border: 1px solid var(--light-gray-color);
     border-radius: 4px;
+    background-color: var(--light-white-color);
+    color: black;
 }
 
+input:focus {
+    outline: 2px solid var(--dark-blue-color);
+}
+
+/* Button Styling */
 button {
     background-color: var(--dark-blue-color);
     color: var(--white-color);
+    border: 1px solid var(--light-gray-color);
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 button:hover {
     background-color: var(--light-blue-color);
 }
 
+/* Button in Dark Mode */
+body.dark-mode button {
+    background-color: var(--dark-button-bg-color);
+    color: var(--dark-text-color);
+    border: 1px solid var(--dark-border-highlight);
+}
+
+body.dark-mode button:hover {
+    background-color: var(--dark-button-hover-bg-color);
+}
+
+/* Text Info Styles */
 small {
     font-size: 12px;
     color: var(--gray-color);
@@ -54,11 +105,13 @@ small {
 #ratingValue {
     font-weight: bold;
     margin-left: 10px;
+    color: var(--gray-color);
 }
 
+/* Footer Styles */
 footer {
     background-color: #2c3e50;
-    color: white;
+    color: var(--white-color);
     width: 100%;
     padding: 10px;
     text-align: center;
