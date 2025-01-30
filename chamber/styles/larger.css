@@ -82,4 +82,12 @@
     .photo-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .join-us {
+        grid-template-columns: 2fr 1fr; /* Dos columnas para pantallas más grandes */
+        align-items: flex-start;
+    }
+
+
+
 }
