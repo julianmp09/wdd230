@@ -1,0 +1,11 @@
+{
+    "activities": [
+      { "name": "Week 01", "details": "Layout | Media Query | JS ", "url": "#" },
+      { "name": "Week 02", "details": "CSS Basics | Responsive Hamburger Menu | DOM Manipulation ", "url": "#" },
+      { "name": "Week 03", "details": "WebP Image File Format | Native Lazy Loading| Web Storage API - localStorage", "url": "#" },
+      { "name": "Week 04", "details": "HTML Forms | CSS Psuedo-classes", "url": "#" },
+      { "name": "Week 05", "details": "The Fetch API | Consuming a third-party Weather API", "url": "#" },
+      { "name": "Week 06", "details": "The Chamber Home Page Enhancements", "url": "#" }
+    ]
+  }
+  
