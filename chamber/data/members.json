@@ -19,8 +19,40 @@
         "name": "Pastas Artesanales Doña Americana",
         "address": "Manuel Belgrano 154. Domselaar",
         "phone": "(11) 57185716",
-        "website": "https://www.instagram.com/donaamericapastas/",
+        "website": "",
         "image": "images/PASTA-AMERICANA.webp",
+        "membership": "Bronze"
+    },
+    {
+        "name": "Axion energy",
+        "address": "Manuel Belgrano 116. Domselaar",
+        "phone": "not available.",
+        "website": "https://www.axionenergy.com/Paginas/index.aspx",
+        "image": "images/Axion.webp",
+        "membership": "Gold"
+    },
+    {
+        "name": "Alan Regaleria",
+        "address": "9 de Julio 112. Domselaar",
+        "phone": "02223461628",
+        "website": "/",
+        "image": "images/alan-regaleria.webp",
+        "membership": "Bronze"
+    },
+    {
+        "name": "Electricidad Domselaar",
+        "address": "Juan B. Justo 134. Domselaar",
+        "phone": "02223671709",
+        "website": "/",
+        "image": "images/Electricidad-Domselaar.webp",
+        "membership": "Bronze"
+    },
+    {
+        "name": "ANSES",
+        "address": "9 de Julio 283. Domselaar",
+        "phone": "not available.",
+        "website": "https://www.anses.gob.ar/",
+        "image": "images/anses.webp",
         "membership": "Bronze"
     }
 ]
