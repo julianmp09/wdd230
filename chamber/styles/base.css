@@ -501,6 +501,74 @@ form button:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Directory Section */
+.directory {
+    padding: 2rem;
+}
+
+.view-toggle {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#members-container.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+#grid-view, #list-view {
+    width: auto;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: all ease-in-out 0.3s;
+}
+
+#grid-view:hover, #list-view:hover{
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+}
+
+#members-container.list-view {
+    display: block;
+}
+
+.member {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.member img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.member h3 {
+    margin: 0.5rem 0;
+}
+
+.member p {
+    margin: 0.25rem 0;
+}
+
+.member .membership {
+    display: inline-block;
+    padding: 0.5rem;
+    background: #007bff;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
 
 /* Hover effect (non-mobile) */
 @media (min-width: 768px) {

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Grido Ice Cream Shop",
+        "address": "Manuel Belgrano 153. Domselaar",
+        "phone": "(11) 27291034",
+        "website": "https://argentina.gridohelado.com/",
+        "image": "images/grido.webp",
+        "membership": "Gold"
+    },
+    {
+        "name": "Moda en Casa",
+        "address": "Manuel Belgrano 152. Domselaar",
+        "phone": "(11) 54871480",
+        "website": "https://julianmp09.github.io/wdd131/project-moda-en-casa/moda-en-casa-home.html",
+        "image": "images/moda-en-casa.webp",
+        "membership": "Silver"
+    },
+    {
+        "name": "Pastas Artesanales Doña Americana",
+        "address": "Manuel Belgrano 154. Domselaar",
+        "phone": "(11) 57185716",
+        "website": "https://www.instagram.com/donaamericapastas/",
+        "image": "images/PASTA-AMERICANA.webp",
+        "membership": "Bronze"
+    }
+]
