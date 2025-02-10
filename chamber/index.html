@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/menu.js" defer></script>
     <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+    <script src="scripts/featuredMembers.js" defer></script>
 </head>
 <body>
     <header>
@@ -43,26 +46,26 @@
             <a href="#" class="cta-button">Keynote Tickets</a>
         </section>
         <h2 class="title-home">Home</h2>
+        <div id="banner" style="display: none;">
+            <p>Join our Chamber of Commerce meeting this Wednesday at 7:00 PM.</p>
+            <button id="close-banner"> ❌ Close ❌</button>
+        </div> 
         <section class="info">
             <div class="events">
                 <h2>Events</h2>
                 <p>Details about current events will go here.</p>
             </div>
+            <section class="featured-members">
+                <h2>Featured Members</h2>
+                <div id="featured-members"></div>
+            </section>              
             <div class="weather">
                 <h2>Current Weather</h2>
-                <p>75&deg;F Partly Cloudy</p>
-                <p>High: 85&deg; Low: 52&deg;</p>
-                <p>Humidity: 34%</p>
-                <p>Sunrise: 7:30am</p>
-                <p>Sunset: 9:59pm</p>
-            </div>
-            <div class="forecast">
-                <h2>Weather Forecast</h2>
-                <p>Today: 90&deg;F</p>
-                <p>Wednesday: 89&deg;F</p>
-                <p>Thursday: 68&deg;F</p>
-            </div>
-        </section>
+                <p>Temperature: <span id="current-temp"></span></p>
+                <p>Description: <span id="current-desc"></span></p>
+                <div id="forecast"></div>
+              </div>              
+        </section>         
         <section class="business-cards">
             <div class="card">
                 <h3>Grido</h3>
